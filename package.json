@@ -1,0 +1,32 @@
+{
+  "name": "entitizer.concepts-storage",
+  "version": "0.0.1",
+  "description": "A nodejs module for storing concepts",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/entitizer/concepts-storage-js.git"
+  },
+  "keywords": [
+    "concept",
+    "storage",
+    "data",
+    "entitizer"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entitizer/concepts-storage-js/issues"
+  },
+  "homepage": "https://github.com/entitizer/concepts-storage-js",
+  "devDependencies": {
+    "mocha": "^2.3.2"
+  },
+  "dependencies": {
+    "mongoose": "^4.1.7"
+  }
+}

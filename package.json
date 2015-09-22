@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "atonic": "^1.0.4",
+    "bluebird": "^2.10.1",
     "lodash": "^3.10.1",
     "mongoose": "^4.1.7"
   }

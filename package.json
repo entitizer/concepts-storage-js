@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/entitizer/concepts-storage-js",
   "devDependencies": {
-    "mocha": "^2.3.2"
+    "mocha": "^2.3.3"
   },
   "dependencies": {
+    "atonic": "^1.0.4",
+    "lodash": "^3.10.1",
     "mongoose": "^4.1.7"
   }
 }

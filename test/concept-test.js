@@ -1,34 +1,36 @@
 'use strict';
 
 var Concept = require('../lib/concept');
-// var assert = require('assert');
+var assert = require('assert');
 
 describe('Concept', function() {
 	it('Владимир Путин', function() {
 		var concept = new Concept({
-			name: 'Владимир Путин',
+			value: 'Владимир Путин',
 			lang: 'ru',
 			country: 'ru'
 		});
-		concept.build();
+		assert.equal('Владимир Путин', concept.name);
+		assert.equal('ru', concept.lang);
 	});
 	it('Влади́мир Влади́мирович Пу́тин', function() {
 		var concept = new Concept({
 			name: 'Влади́мир Влади́мирович Пу́тин ',
-			lang: 'ru',
-			country: 'ru'
+			context: {
+				lang: 'ru',
+				country: 'ru'
+			}
 		});
-		concept.build();
+		assert.equal('Влади́мир Влади́мирович Пу́тин', concept.name);
+		assert.equal('ru', concept.lang);
 	});
-	it('Вячеслав Войнов', function() {
-		var concept = new Concept({
-			name: 'Вячеслав Войнов',
-			abbr: 'BB'
+	it('lang required', function() {
+		assert.throws(function() {
+			var concept = new Concept({
+				name: 'Вячеслав Войнов',
+				abbr: 'BB'
+			});
+			assert.ok(concept);
 		});
-		concept.build({
-			lang: 'ru',
-			country: 'ru'
-		});
-		console.log(concept);
 	});
 });

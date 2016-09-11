@@ -1,6 +1,6 @@
 {
   "name": "entitizer.concepts-storage",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A nodejs module for storing concepts",
   "main": "./lib/index.js",
   "scripts": {
